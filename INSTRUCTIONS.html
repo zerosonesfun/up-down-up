@@ -1,0 +1,62 @@
+<!-- Copyright 2022 Billy Wilcosky. All Rights Reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <title>Up Down Up Doc</title>
+    <meta name="description" content="Documentation for the minimal upvoting WordPress plugin called, Up Down Up.">
+    <meta name="author" content="Billy Wilcosky">
+  </head>
+  <body>
+    
+    <main>
+      
+      <!-- ----------
+      ---- Instructions -----
+      ----------- -->
+      
+      <section id="instructions">
+        <h1>Up Down Up</h1>
+        <p>This is a minimal up and down voting WordPress plugin. There are no settings. You activate the plugin and you are all set. Once activated up and down arrow voting buttons will appear on your single post pages. Only logged in users can vote.</section>
+        <h4>Installation</h4>
+        <p>To install, go to your WordPress admin dashboard. Go to Plugins --> Add New. Choose upload plugin at the top of the page. Upload the cream-upvote.zip file. Activate it. Done.</p>
+        <h4>Customization</h4>
+        <p>If you do not see the voting buttons after activating the plugin there may be a conflict with your theme's CSS (styling). Or, even if there are no issues, you may want to add custom styling. This requires some CSS knowlege.</p>
+        <p>Within the Appearance --> Customize area of your WordPress admin you may add custom CSS rules to change the look or position of the voting buttons.</p>
+        <p>The main CSS classes you could target/adjust are:</p>
+        <code>
+          .cream-fab-container {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            z-index: 999;
+            cursor: pointer;
+            background: transparent;
+            transition: 0.3s;
+            padding: 5px;
+            min-width: 4em
+          }
+          .cream-fab-icon, .cream-fab-counter {
+            text-align: center;
+          }
+          .cream-fab-icon {
+            font-size: 1.5rem;
+          }
+          .cream-icon-selected {
+            background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .cream-fab-counter p {
+              margin: 0;
+              padding: 0;
+          }
+        </code>
+       </section>
+      
+    </main>
+    
+  </body>
+</html>

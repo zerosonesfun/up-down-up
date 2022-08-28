@@ -1,0 +1,14 @@
+{
+    "name": "johns/defiant-interview",
+    "type": "project",
+    "authors": [
+        {
+            "name": "John Shroff",
+            "email": "john.shroff@flowtrac.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {"Defiant\\": "src/"}
+    },
+    "require": {}
+}

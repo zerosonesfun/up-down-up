@@ -1,0 +1,26 @@
+.cream-fab-container {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 999;
+	cursor: pointer;
+	background: transparent;
+	transition: 0.3s;
+	padding: 5px;
+	min-width: 4em
+}
+.cream-fab-icon, .cream-fab-counter {
+	text-align: center;
+}
+.cream-fab-icon {
+	font-size: 1.5rem;
+}
+.cream-icon-selected {
+	background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.cream-fab-counter p {
+    margin: 0;
+    padding: 0;
+}
